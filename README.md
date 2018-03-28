@@ -1,7 +1,10 @@
 # GML_TEST2
-To test deployment of keras saved_model to Google Cloud ML for serving
+To test deployment of keras saved_model to Google Cloud ML for serving. 
 
-Keras model of inception v3 was saved as saved_model for serving on google ml-engine.
+Keras model of inception v3 was saved as saved_model for serving on google ml-engine. 
+model file (inception_model2.py), and b64 json instance file for testing (image_bytes5.json) are both
+included.
+
 Saved model was deployed to cloud. Upon attempted test of model with json instance request, received following error msg:
 
 `{
