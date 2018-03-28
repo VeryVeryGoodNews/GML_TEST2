@@ -3,9 +3,11 @@ To test deployment of keras saved_model to Google Cloud ML for serving.
 
 Keras model of inception v3 was saved as saved_model for serving on google ml-engine. 
 model file (inception_model2.py), and b64 json instance file for testing (image_bytes5.json) are both
-included.
+included. Model code adapted from Chase Midler's code shown here:
+https://stackoverflow.com/questions/48216067/tensorflow-serving-prediction-as-b64-output-top-result
 
-Saved model was deployed to cloud. Upon attempted test of model with json instance request, received following error msg:
+Saved model was deployed to cloud. Upon attempted test of model with json instance request,
+received following error msg:
 
 `{
   "error": "Prediction failed: Error during model execution: AbortionError(code=StatusCode.INVALID_ARGU
